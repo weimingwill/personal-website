@@ -11,6 +11,9 @@
     <v-list dense>
       <v-list-item v-for="item in menuitems" :key="item">
         <v-list-tile :href="item.path" :router="item.router">
+          <v-list-tile-avatar>
+            <v-icon>{{ item.icon }}</v-icon>
+          </v-list-tile-avatar>
           <v-list-tile-content>
             <v-list-tile-title class="list-title">{{ item.title }}</v-list-tile-title>
           </v-list-tile-content>
@@ -72,8 +75,8 @@
   }
 
   .list__tile__title {
-    text-align: center;
-    font-size: 15px;
+    font-size: 14px;
     color: #424242;
+    margin-left: 10px;
   }
 </style>

@@ -7,48 +7,48 @@ const state = {
       path: '/projects',
       isMenu: true,
       router: true,
-      icon: 'domain',
+      icon: 'computer',
       component: lazyLoading('Works'),
     }, {
       title: 'Skills',
       path: '/skills',
       isMenu: true,
       router: true,
-      icon: 'domain',
+      icon: 'create',
       component: lazyLoading('Skills'),
     }, {
       title: 'About',
       path: '/about',
       isMenu: true,
       router: true,
-      icon: 'domain',
+      icon: 'face',
       component: lazyLoading('About'),
     }, {
       title: 'Blog',
       path: '/blog',
       isMenu: true,
       router: true,
-      icon: 'domain',
+      icon: 'view_day',
       component: lazyLoading('Blog'),
     }, {
       title: 'Contact',
       path: '/contact',
       isMenu: true,
       router: true,
-      icon: 'domain',
+      icon: 'mail',
       component: lazyLoading('Contact'),
     }, {
       title: 'Resume',
       path: '/resume',
       isMenu: true,
       router: true,
-      icon: 'domain',
+      icon: 'content_copy',
       component: lazyLoading('Resume'),
-    },
-
+    }
   ]
 }
 
 export default {
   state
 }
+
