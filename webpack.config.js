@@ -77,6 +77,10 @@ module.exports = {
         options: {
           limit: 10000
         }
+      },
+      {
+        test: /\.json$/,
+        use: 'json-loader'
       }
     ]
   },

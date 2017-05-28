@@ -8,7 +8,7 @@ const state = {
       isMenu: true,
       router: true,
       icon: 'computer',
-      component: lazyLoading('Works'),
+      component: lazyLoading('projects/Projects'),
     }, {
       title: 'Skills',
       path: '/skills',
