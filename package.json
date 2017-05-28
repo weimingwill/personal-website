@@ -1,0 +1,34 @@
+{
+  "name": "web",
+  "version": "1.0.0",
+  "description": "Personal website",
+  "main": "index.js",
+  "scripts": {
+    "dev": "webpack -d --watch",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Weiming",
+  "license": "ISC",
+  "devDependencies": {
+    "buble": "^0.15.2",
+    "buble-loader": "^0.4.1",
+    "css-loader": "^0.28.3",
+    "extract-text-webpack-plugin": "^2.1.0",
+    "file-loader": "^0.11.1",
+    "html-webpack-plugin": "^2.28.0",
+    "style-loader": "^0.18.1",
+    "stylus": "^0.54.5",
+    "stylus-loader": "^3.0.1",
+    "url-loader": "^0.5.8",
+    "vue": "^2.3.3",
+    "vue-loader": "^12.2.0",
+    "vue-router": "^2.5.3",
+    "vue-style-loader": "^3.0.1",
+    "vue-template-compiler": "^2.3.3",
+    "vuetify": "^0.12.2",
+    "vuex": "^2.3.1",
+    "vuex-router-sync": "^4.1.3",
+    "webpack": "^2.6.1",
+    "webpack-merge": "^4.1.0"
+  }
+}
