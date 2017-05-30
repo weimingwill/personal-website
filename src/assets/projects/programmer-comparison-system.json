@@ -2,6 +2,6 @@
   "title": "Programmer Comparison System",
   "tags": ["Web Dev", "JavaScript", "JQuery"],
   "description": "A programmer comparison system that allows users to compare capability of different programmers based on their proficiency on programming languages and experienced fields.",
-  "image": "src/assets/projects/pcs.png",
+  "image": "src/assets/images/projects/pcs.png",
   "href": "https://github.com/weimingwill/pcs"
 }

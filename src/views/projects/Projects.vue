@@ -1,7 +1,7 @@
 <template>
   <v-container fluid>
-    <v-layout row wrap>
-      <v-flex xs6 v-for="(project, index) in projects" :key="index">
+    <v-layout row justify-space-between v-for="(projects, rowIndex) in projectRows" :key="rowIndex">
+      <v-flex xs4 class="pb-4" v-for="(project, index) in projects" :key="index">
         <project-card :project="project"></project-card>
       </v-flex>
     </v-layout>
@@ -9,7 +9,7 @@
 </template>
 
 <script>
-  import { ProjectCard } from './components/ProjectCard.vue'
+  import ProjectCard from './components/ProjectCard.vue'
   import { mapGetters, mapActions } from 'vuex'
 
   export default {
@@ -21,7 +21,7 @@
 
     computed: {
       ...mapGetters([
-        'projects'
+        'projectRows'
       ])
     },
 
@@ -36,3 +36,9 @@
     }
   }
 </script>
+
+<style scoped>
+  .container {
+    padding: 0;
+  }
+</style>

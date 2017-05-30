@@ -12,7 +12,7 @@ module.exports = {
     app: './src/main.js'
   },
   output: {
-    path: path.resolve(__dirname, 'dist'),
+    path: path.resolve(__dirname, ''),
     filename: 'app.js'
   },
   resolve: {
@@ -66,14 +66,14 @@ module.exports = {
       },
       {
         test: /\.(png|jpe?g|gif|svg)(\?.*)?$/,
-        loader: 'url-loader',
+        loader: 'url-loader?name=/images/[name].[ext]',
         options: {
           limit: 10000
         }
       },
       {
         test: /\.(woff2?|eot|ttf|otf)(\?.*)?$/,
-        loader: 'url-loader',
+        loader: 'url-loader?name=/images/[name].[ext]',
         options: {
           limit: 10000
         }

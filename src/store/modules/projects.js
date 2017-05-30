@@ -8,7 +8,27 @@ const state = {
 }
 
 const getters = {
-  projects: state => state.projects
+  projects: state => state.projects,
+
+  projectRows: state => {
+    let projectRows = []
+      , i
+      , projectRow
+      , length = state.projects.length
+
+    for (i = 0; i < length; i++) {
+      if ( i % 3 === 0) {
+        projectRow = []
+      }
+
+      projectRow.push(state.projects[i])
+
+      if (i % 3 === 2 || i === length - 1) {
+        projectRows.push(projectRow)
+      }
+    }
+    return projectRows
+  }
 }
 
 const mutations = {

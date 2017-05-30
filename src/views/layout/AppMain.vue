@@ -15,6 +15,6 @@
 
 <style>
   main {
-    padding-left: 300px;
+    padding-left: 250px !important;
   }
 </style>

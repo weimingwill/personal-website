@@ -1,6 +1,8 @@
 <template>
-  <v-card hover>
-    <v-card-row :img="project.image" height="300px"></v-card-row>
+  <v-card hover raised>
+    <v-card-row>
+      <img :src="project.image" class="project-img">
+    </v-card-row>
     <v-card-title>{{ project.title }}</v-card-title>
     <v-card-text class="blue-grey darken-3 white--text">
       <div v-text="project.description"></div>
@@ -15,3 +17,9 @@
     props: ['project']
   }
 </script>
+
+<style scoped>
+  .project-img {
+    width: 100%;
+  }
+</style>

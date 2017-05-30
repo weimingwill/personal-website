@@ -2,6 +2,6 @@
   "title": "Airline Management System",
   "tags": ["J2EE", "PrimeFaces"],
   "description": "Airline management system contains 6 sub-systems: mobileIndex.pngAirline Planning System, Airline Flight Operation System, Airline Inventory system, Airline Distribution System, Departure Control System, Airline Administration System, Customer Relationship Management System.",
-  "image": "src/assets/projects/airline-system.png",
+  "image": "src/assets/images/projects/airline-system.png",
   "href": "https://github.com/weimingwill/airline-system"
 }

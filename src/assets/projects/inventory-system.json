@@ -2,6 +2,6 @@
   "title": "E-commerce Inventory System",
   "tags": ["Web Dev", "JavaScript", "Vue"],
   "description": "This is a SPA (Single page application) as MVP for EC inventory system.",
-  "image": "src/assets/projects/inventory-system.png",
+  "image": "src/assets/images/projects/inventory-system.png",
   "href": "https://github.com/weimingwill/inventory-system"
 }
