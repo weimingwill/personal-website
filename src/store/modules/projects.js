@@ -33,6 +33,7 @@ const getters = {
 
 const mutations = {
   [types.READ_PROJECTS] (state, projects) {
+    state.projects = []
     let project
     PROJECTS.forEach(name => {
       project = require('../../assets/projects/'+ name + '.json')
