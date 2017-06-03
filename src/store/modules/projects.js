@@ -10,21 +10,32 @@ const state = {
 const getters = {
   projects: state => state.projects,
 
-  projectRows: state => {
+  getProjectCols: state => (width) => {
     let projectRows = []
       , i
-      , projectRow
+      , numOfCol
       , length = state.projects.length
+      , col = 0
+
+    if (width > 1440) {
+      numOfCol = 3
+    } else if (1024 < width < 1440) {
+      numOfCol = 2
+    } else {
+      numOfCol = 1
+    }
 
     for (i = 0; i < length; i++) {
-      if ( i % 3 === 0) {
-        projectRow = []
+      if (!projectRows[col]) {
+        projectRows[col] = []
       }
 
-      projectRow.push(state.projects[i])
+      projectRows[col].push(state.projects[i]);
 
-      if (i % 3 === 2 || i === length - 1) {
-        projectRows.push(projectRow)
+      if (col === numOfCol - 1) {
+        col = 0
+      } else {
+        col++
       }
     }
     return projectRows
