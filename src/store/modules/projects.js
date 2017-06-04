@@ -1,5 +1,4 @@
 import * as types from '../mutation-types'
-import { readTextFile } from '../../helper/index'
 
 const PROJECTS = ['inventory-system', 'nus-bus', 'airline-system', 'programmer-comparison-system']
 
@@ -43,7 +42,7 @@ const getters = {
 }
 
 const mutations = {
-  [types.READ_PROJECTS] (state, projects) {
+  [types.READ_PROJECTS] (state) {
     state.projects = []
     let project
     PROJECTS.forEach(name => {

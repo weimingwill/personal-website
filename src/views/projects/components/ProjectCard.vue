@@ -9,7 +9,7 @@
         <div v-text="project.description"></div>
       </v-card-text>
       <div>
-        <v-chip class="" v-for="(tag, index) in project.tags" :key="index">{{ tag }}</v-chip>
+        <v-chip v-for="(tag, index) in project.tags" :key="index">{{ tag }}</v-chip>
       </div>
     </v-container>
   </v-card>

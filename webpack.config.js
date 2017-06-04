@@ -1,5 +1,6 @@
 var path = require('path');
 var HtmlWebpackPlugin = require('html-webpack-plugin');
+var ExtractTextPlugin = require('extract-text-webpack-plugin');
 var vueLoaderConfig = require('./build/vue-loader.conf.js');
 var webpack = require('webpack');
 
@@ -8,6 +9,10 @@ function resolve (dir) {
 }
 
 module.exports = {
+  entry: [
+    './node_modules/font-awesome/scss/font-awesome.scss',
+    './src/main.js'
+  ],
   entry: {
     app: './src/main.js'
   },
@@ -31,18 +36,18 @@ module.exports = {
     rules: [
       {
         test: /\.css$/,
-        use: [
-          { loader: "style-loader" },
-          { loader: "css-loader" }
-        ]
+        use: ExtractTextPlugin.extract({
+          fallback: 'style-loader',
+          use: [ 'css-loader', 'stylus-loader', 'sass-loader' ]
+        })
       },
       {
         test: /\.styl$/,
         use: [
-          {loader: 'style-loader'},
-          {loader: 'css-loader'},
-          {loader: 'stylus-loader'},
-          {loader: "sass-loader"}
+          { loader: 'style-loader' },
+          { loader: 'css-loader' },
+          { loader: 'stylus-loader' },
+          { loader: "sass-loader" }
         ]
       },
       {
@@ -89,6 +94,9 @@ module.exports = {
       filename: 'index.html',
       template: 'src/index.html',
       inject: true
+    }),
+    new ExtractTextPlugin({
+      filename: '[name]-[chunkhash].css', allChunks: true,
     }),
     new webpack.optimize.UglifyJsPlugin
   ]

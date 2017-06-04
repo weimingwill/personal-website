@@ -1,0 +1,13 @@
+{
+  "programming": {
+    "lang": ["Python", "Java", "JavaScript", "MySQL"],
+    "frontend": ["Web Development", "Vue", "JQuery", "PrimeFaces"],
+    "backend": ["Google App Engine", "J2EE", "JSP"],
+    "mobile": ["Android Development"],
+    "others": ["Salesforce Development", "PHP", "C"]
+  },
+  "others": {
+    "core": ["Product Design", "Project Management", "Market Validation"],
+    "app": ["Balsamiq", "Adobe Photoshop"]
+  }
+}

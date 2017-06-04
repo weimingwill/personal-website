@@ -6,6 +6,7 @@ import * as getters from './getters'
 import app from './modules/app'
 import menu from './modules/menu'
 import project from './modules/projects'
+import skills from './modules/skills'
 
 Vue.use(Vuex);
 
@@ -17,7 +18,8 @@ const store = new Vuex.Store({
   modules: {
     app,
     menu,
-    project
+    project,
+    skills
   },
   // strict: debug
 });
