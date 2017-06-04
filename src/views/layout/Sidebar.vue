@@ -20,6 +20,14 @@
         </v-list-tile>
       </v-list-item>
     </v-list>
+
+    <v-container fluid>
+      <v-layout row justify-space-around class="contact-layout">
+          <v-btn v-for="(contact, index) in contacts" :key="index" floating small :class="[contact.color]">
+            <v-icon light fa class="contact-icon">{{ contact.icon }}</v-icon>
+          </v-btn>
+      </v-layout>
+    </v-container>
   </v-navigation-drawer>
 </template>
 
@@ -31,9 +39,20 @@
 
     computed: {
       ...mapGetters([
-        'menuitems'
+        'menuitems',
+        'contacts'
       ]),
     },
+
+    methods: {
+      ...mapActions([
+        'readContacts'
+      ])
+    },
+
+    created () {
+      this.readContacts()
+    }
   }
 </script>
 
@@ -78,5 +97,19 @@
     font-size: 14px;
     color: #424242;
     margin-left: 10px;
+  }
+
+  /* Contact buttons */
+  .contact-layout {
+    margin: 10px 0;
+  }
+
+  .contact-icon {
+    font-size: 20px;
+  }
+
+  .btn--floating.btn--small, .fab--floating.btn--small, .fab.btn--small {
+    width: 35px;
+    height: 35px;
   }
 </style>

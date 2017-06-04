@@ -7,6 +7,7 @@ import app from './modules/app'
 import menu from './modules/menu'
 import project from './modules/projects'
 import skills from './modules/skills'
+import contacts from './modules/contacts'
 
 Vue.use(Vuex);
 
@@ -19,7 +20,8 @@ const store = new Vuex.Store({
     app,
     menu,
     project,
-    skills
+    skills,
+    contacts
   },
   // strict: debug
 });

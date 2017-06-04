@@ -1,0 +1,17 @@
+{
+  "methods": [
+    {
+      "color": "red",
+      "icon": "envelope"
+    }, {
+      "color": "orange",
+      "icon": "github"
+    }, {
+      "color": "primary",
+      "icon": "linkedin"
+    }, {
+      "color": "green",
+      "icon": "weixin"
+    }
+  ]
+}

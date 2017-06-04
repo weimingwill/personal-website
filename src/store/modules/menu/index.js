@@ -31,13 +31,6 @@ const state = {
       icon: 'view_day',
       component: lazyLoading('Blog'),
     }, {
-      title: 'Contact',
-      path: '/contact',
-      isMenu: true,
-      router: true,
-      icon: 'mail',
-      component: lazyLoading('Contact'),
-    }, {
       title: 'Resume',
       path: '/resume',
       isMenu: true,
