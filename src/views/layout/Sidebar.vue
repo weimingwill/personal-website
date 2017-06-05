@@ -23,7 +23,11 @@
 
     <v-container fluid>
       <v-layout row justify-space-around class="contact-layout">
-          <v-btn v-for="(contact, index) in contacts" :key="index" floating small :class="[contact.color]">
+          <v-btn v-for="(contact, index) in contacts" :key="index"
+                 floating small :class="[contact.color]"
+                 v-tooltip:top="{ html: contact.tooltip }"
+                 @click.native="onContactMethodClicked(contact.link)"
+          >
             <v-icon light fa class="contact-icon">{{ contact.icon }}</v-icon>
           </v-btn>
       </v-layout>
@@ -47,7 +51,15 @@
     methods: {
       ...mapActions([
         'readContacts'
-      ])
+      ]),
+      onContactMethodClicked(link) {
+        if (link) {
+          if (link.includes('@')) {
+            link = 'mailto:' + link
+          }
+          window.open(link)
+        }
+      }
     },
 
     created () {
