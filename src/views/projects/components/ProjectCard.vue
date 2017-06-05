@@ -1,5 +1,6 @@
 <template>
   <v-card hover raised class="project-card">
+    <input v-model="project.href" type="hidden">
     <v-card-row class="project-image-row">
       <img :src="project.image" class="project-img">
     </v-card-row>
@@ -19,7 +20,38 @@
   export default {
     name: 'ProjectCard',
 
-    props: ['project']
+    props: ['project'],
+
+    methods: {
+      cardClickEvent (action) {
+        let $cards = document.getElementsByClassName('project-card');
+        Array.from($cards).forEach(($card) => {
+          let $input = $card.firstChild
+          if (action === 'add') {
+            if ($input.name !== '1') {
+              $card.addEventListener('click', () => this.onCardClicked($input.value))
+              $input.name = '1'
+            }
+          } else if (action === 'remove') {
+            $card.removeEventListener('click', () => this.onCardClicked($input.value))
+          }
+        })
+      },
+
+      onCardClicked (link) {
+        if (link) {
+          window.open(link)
+        }
+      }
+    },
+
+    mounted () {
+      this.cardClickEvent('add');
+    },
+
+    beforeDestroy () {
+      this.cardClickEvent('remove');
+    }
   }
 </script>
 
