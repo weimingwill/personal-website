@@ -1,5 +1,5 @@
 <template>
-  <main>
+  <main id="main">
     <v-container fluid>
       <transition mode="out-in">
         <router-view></router-view>
@@ -10,11 +10,18 @@
 
 <script>
   export default {
+    name: 'AppMain'
   }
 </script>
 
-<style>
+<style scoped>
   main {
-    padding-left: 250px !important;
+    padding-left: 250px;
+  }
+
+  @media only screen and (max-width: 1024px) {
+    main {
+      padding-left: 0;
+    }
   }
 </style>

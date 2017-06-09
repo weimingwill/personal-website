@@ -48,8 +48,7 @@
     },
 
     mounted () {
-      let width = (window.innerWidth > 0) ? window.innerWidth : screen.width
-      this.projectCols = this.getProjectCols(width)
+      this.handleResize()
       window.addEventListener('resize', this.handleResize)
     },
 

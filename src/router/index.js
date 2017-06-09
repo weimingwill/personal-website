@@ -7,15 +7,10 @@ Vue.use(Router);
 
 export default new Router({
   routes: [
-    {
-      path: '/',
-      name: 'About',
-      component: require('../views/About.vue')
-    },
     ...generateRoutesFromMenu(menuModule.state.items),
     {
       path: '*',
-      redirect: '/'
+      redirect: '/projects'
     }
   ]
 })

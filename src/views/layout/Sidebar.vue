@@ -1,5 +1,5 @@
 <template>
-  <v-navigation-drawer permanent light class="elevation-5 sidebar">
+  <v-navigation-drawer :temporary="isSmallScreen" v-model="showSidebar" light class="elevation-5 sidebar">
     <v-container class="avatar-container text-xs-center pt-5">
       <div class="image-cropper elevation-1 mb-4">
         <img class="avatar" src="../../assets/images/avatar.jpg">
@@ -41,11 +41,30 @@
   export default {
     name: 'Sidebar',
 
+    props: ['drawer', 'isSmallScreen', 'isIconClicked'],
+
+    data () {
+      return {
+        showSidebar: this.drawer
+      }
+    },
+
+    watch: {
+      drawer () {
+        this.showSidebar = this.drawer
+        console.log('drawer: ' + this.showSidebar)
+      },
+
+      isIconClicked() {
+        this.showSidebar = true
+      }
+    },
+
     computed: {
       ...mapGetters([
         'menuitems',
         'contacts'
-      ]),
+      ])
     },
 
     methods: {
