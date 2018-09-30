@@ -7,7 +7,7 @@
   export default {
     name: "Resume",
     created () {
-      window.location.replace("https://drive.google.com/file/d/0Bxm4FuTZn_E4OE54SHljd2VTaU0/view?usp=sharing");
+      window.location.replace("https://drive.google.com/file/d/1_utY8O6q0LASvwmnyPIiDpyfiE6lEfA8/view?usp=sharing");
     }
   }
 </script>

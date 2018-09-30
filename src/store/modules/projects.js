@@ -1,6 +1,7 @@
 import * as types from '../mutation-types'
 
-const PROJECTS = ['inventory-system', 'nus-bus', 'airline-system', 'programmer-comparison-system']
+const PROJECTS = ['distributed-load-testing', 'programmer-comparison-system',
+'inventory-system', 'airline-system',  'nus-bus']
 
 const state = {
   projects: []

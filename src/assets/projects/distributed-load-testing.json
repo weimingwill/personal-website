@@ -1,0 +1,7 @@
+{
+  "title": "Distributed Load Testing",
+  "tags": ["Go", "Docker", "Kubernetes", "Distributed Systems"],
+  "description": " This tool has two parts. 1. Distributed load testing tool to test APIs of e-commerce systems. It helped developers find system bottle necks. 2. Distributed scheduler and consensus cluster to automate load testing service and provide strong consistency, fault tolerance and auto fail-over mechanism. Services are dockerized and deployed to Kubernetes.",
+  "image": "src/assets/images/projects/distributed-load-testing.jpeg",
+  "href": "http://blog.zhuangweiming.me/2018/03/02/%E5%88%86%E5%B8%83%E5%BC%8F%E8%B4%9F%E8%BD%BD%E6%B5%8B%E8%AF%95%E5%AE%9E%E8%B7%B5/"
+}

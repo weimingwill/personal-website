@@ -29,7 +29,7 @@
     <p class="header-icon"><v-icon x-large class="blue--text">card_travel</v-icon></p>
     <h6 class="about-header">
       <span class="work"></span>
-      Works Application(Singapore)
+      GATCoin (Singapore)
     </h6>
 
   </v-container>
