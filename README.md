@@ -7,9 +7,7 @@ It is a personal website developed in Vue.
 2. Update list in `projects.js` under store.
 
 ### Build the project
-```npm run dev```
-
-Build the project after udpates to generate static files.
+Run `npm run dev` to generate static files.
 
 ## Deploy
 1. Update file and directory permissions in server (for replacing files)
