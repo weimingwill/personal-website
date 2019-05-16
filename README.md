@@ -8,6 +8,7 @@ It is a personal website developed in Vue.
 
 ### Build the project
 ```npm run dev```
+
 Build the project after udpates to generate static files.
 
 ## Deploy
