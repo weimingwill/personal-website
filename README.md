@@ -6,11 +6,15 @@ It is a personal website developed in Vue.
 1. Create a new project json file with details.
 2. Update list in `projects.js` under store.
 
+### Build the project
+```npm run dev```
+Build the project after udpates to generate static files.
+
 ## Deploy
 1. Update file and directory permissions in server (for replacing files)
 ```
 sudo find <folder> -type d -exec chmod 777 {} \;
-sudo find <folder> -type d -exec chmod 777 {} \;
+sudo find <folder> -type f -exec chmod 777 {} \;
 ```
 
 2. Copy all generated files from local to server ingoring `node_modules`.
@@ -27,5 +31,5 @@ sudo service nginx start
 4. Change back file and directory permissions in server
 ```
 sudo find <folder> -type d -exec chmod 755 {} \;
-sudo find <folder> -type d -exec chmod 755 {} \;
+sudo find <folder> -type f -exec chmod 755 {} \;
 ```
