@@ -1,8 +1,8 @@
 <template>
   <v-container fluid>
-    <h5 class="about-header">Hi, (＾_＾)／</h5>
-    <h5 class="about-header">I'm Weiming,</h5>
-    <h5 class="about-header">A <span class="developer">developer</span> and <span class="pm">product manager</span></h5>
+    <h5 class="about-header">(＾_＾)／</h5>
+    <h6 class="about-header">More content is on the way...</h6>
+    <!--<h5 class="about-header">A <span class="developer">developer</span> and <span class="pm">product manager</span></h5>
     <h5 class="about-header red--text text--lighten-1">with a passion for building tools that improves living quality</h5>
 
     <p class="header-icon"><v-icon x-large class="yellow--text text--darken-2">lightbulb_outline</v-icon></p>
@@ -30,7 +30,7 @@
     <h6 class="about-header">
       <span class="work"></span>
       GATCoin (Singapore)
-    </h6>
+    </h6> -->
 
   </v-container>
 </template>

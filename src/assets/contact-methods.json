@@ -1,24 +1,24 @@
 {
   "methods": [
     {
+      "color": "orange lighten-2",
+      "icon": "github",
+      "tooltip": "Github",
+      "link": "https://github.com/weimingwill"
+    }, {
       "color": "blue lighten-2",
       "icon": "linkedin",
       "tooltip": "Linkedin",
       "link": "https://www.linkedin.com/in/weiming-zhuang/"
     }, {
-      "color": "red lighten-2",
-      "icon": "envelope",
-      "tooltip": "wingalong@gmail.com",
-      "link": "wingalong@gmail.com"
-    }, {
       "color": "green lighten-2",
       "icon": "weixin",
       "tooltip": "微信公众号：闭眼卖布"
     }, {
-      "color": "orange lighten-2",
-      "icon": "github",
-      "tooltip": "Github",
-      "link": "https://github.com/weimingwill"
+      "color": "red lighten-2",
+      "icon": "envelope",
+      "tooltip": "wingalong",
+      "link": "wingalong@gmail.com"
     }
   ]
 }

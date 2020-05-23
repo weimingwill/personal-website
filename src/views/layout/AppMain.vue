@@ -10,7 +10,12 @@
 
 <script>
   export default {
-    name: 'AppMain'
+    name: 'AppMain',
+
+    mounted() {
+      var height = window.innerHeight;
+      document.getElementById("main").style.height = height + "px";
+    }
   }
 </script>
 
