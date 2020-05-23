@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "dev": "webpack -d --watch",
+    "generate": "webpack -d",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Weiming",
