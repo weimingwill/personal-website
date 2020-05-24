@@ -1,7 +1,7 @@
 <template>
   <v-container>
     <div class="iframe-container">
-      <iframe src="https://blog.weiming.me" allowfullscreen></iframe>
+      <iframe src="https://blog.weiming.me/archives" allowfullscreen></iframe>
     </div>
     <div class="button-container">      
       <v-btn rounded primary light @click.native="redirect">>> Blog Site</v-btn>
