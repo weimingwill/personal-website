@@ -1,5 +1,5 @@
 # personal-website
-It is a personal website developed in Vue.
+It is a personal website developed in Vue. [Demo](https://vue.weiming.me)
 
 ## Update contents
 ### Update project
